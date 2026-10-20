@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store | Nestling</title>
+    <meta name="description" content="Browse Nestling's baby clothing, diapers, wipes, Stage Bundles, toys, formula and milk.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" href="store.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parent">
+        <a class="btn child" href="index.html">Home</a>
+        <a class="btn child" href="store.html" aria-current="page">Store (Cart: <span id="cart-count">0</span>)</a>
+        <a class="btn child" href="OurStory.html">How it works</a>
+        <a class="btn child" href="OurStory.html#contact">Contact us</a>
+    </div>
+
+    <div class="title-container">
+        <h1 class="site-name">Nestling Store</h1>
+        <p class="store-subtitle">Browse all our baby care essentials and collections</p>
+    </div>
+
+    <div class="store-layout-container">
+        <div class="store-grid" id="store-grid">
+            <div class="store-card" data-category="bodysuits" id="bodysuits">
+                <img src="https://images.unsplash.com/photo-1622290319146-7b63df48a635?q=80&w=800&auto=format&fit=crop" alt="A white baby bodysuit laid flat">
+                <h3>Baby Clothing</h3>
+                <p>Soft cotton bodysuits and sets, NB to 18 months. <em>Free size exchange within 30 days!</em></p>
+                <div class="card-actions">
+                    <button class="store-btn view-product-btn" type="button">View Products</button>
+                    <button class="store-btn add-to-cart-btn" data-id="bodysuit-nb" data-name="Cotton Bodysuits NB (3 pack)" data-price="18" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="store-card" data-category="diapers" id="diapers">
+                <img src="https://images.unsplash.com/photo-1504151806752-5b3af8e39e4e?q=80&w=800&auto=format&fit=crop" alt="A baby in a diaper on a white blanket">
+                <h3>Diapers &amp; Water Wipes</h3>
+                <p>Gentle diapers, Newborn to Size 4. <em>Buy 3 or more of the same pack and get a 10% discount!</em></p>
+                <div class="card-actions">
+                    <button class="store-btn view-product-btn" type="button">View Products</button>
+                    <button class="store-btn add-to-cart-btn" data-id="diapers-nb" data-name="Diapers Newborn (60)" data-price="14" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="store-card" data-category="bundles" id="bundles">
+                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=800&auto=format&fit=crop" alt="A baby's feet in a soft white towel">
+                <h3>Stage Bundles</h3>
+                <p>Clothes, a sleepsuit and diapers in the next size. <em>Free delivery on every bundle!</em></p>
+                <div class="card-actions">
+                    <button class="store-btn view-product-btn" type="button">View Products</button>
+                    <button class="store-btn add-to-cart-btn" data-id="bundle-0-3m" data-name="Stage Bundle 0-3M" data-price="49" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="store-card" data-category="toys" id="toys">
+                <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=800&auto=format&fit=crop" alt="A wooden toy train set">
+                <h3>Sensory Development Toys</h3>
+                <p>Rattle, crinkle book, stacking cups and shape sorter. Collect all 4! Need help choosing? Ask the Nest Helper chatbot!</p>
+                <div class="card-actions">
+                    <button class="store-btn view-product-btn" type="button">View Products</button>
+                    <button class="store-btn add-to-cart-btn" data-id="sensory-1-rattle" data-name="Sensory Set 1: Soft Rattle" data-price="12" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="store-card" data-category="playmat" id="playmat">
+                <img src="https://images.unsplash.com/photo-1593793373220-2e51e1c31385?q=80&w=800&auto=format&fit=crop" alt="A baby lying on a play mat">
+                <h3>Padded Play Mat</h3>
+                <p>A soft, cushioned floor mat for tummy time and crawling, from 3 months. Need help choosing? Ask the Nest Helper chatbot!</p>
+                <div class="card-actions">
+                    <a class="store-btn view-product-btn-link" href="shop/play-mat/index.html">View Product</a>
+                    <button class="store-btn add-to-cart-btn" data-id="play-mat" data-name="Padded Play Mat" data-price="39" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="store-card" data-category="formula" id="formula">
+                <img src="assets/formula.svg" alt="Plain illustration of three milk tins">
+                <h3>Formula &amp; Milk</h3>
+                <p>Infant formula, follow-on formula and growing-up milk, at our usual price. <strong>No offers apply. Nestling cannot give advice on baby formula. Please consult a doctor for advice.</strong></p>
+                <div class="card-actions">
+                    <button class="store-btn view-product-btn" type="button">View Products</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-sidebar">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items-container">
+                <p class="empty-cart-msg">Your cart is currently empty.</p>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span id="cart-total-price">S$0.00</span>
+                </div>
+                <p class="delivery-row" id="delivery-row">Free delivery on Stage Bundles and on orders over S$60.</p>
+                <button id="checkout-btn" class="store-btn checkout-btn" type="button">Proceed to Checkout</button>
+                <button id="clear-cart-btn" class="store-btn clear-btn" type="button">Clear Cart</button>
+                <p class="fine-print">Checkout is switched off: Nestling is a fictional shop.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Modal Popup -->
+    <div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-category-title">
+        <div class="modal-content">
+            <button class="close-modal-btn" type="button" aria-label="Close">&times;</button>
+            <h2 id="modal-category-title">Category Products</h2>
+            <div id="modal-notice-banner" class="modal-notice-banner"></div>
+            <div id="modal-products-list" class="modal-products-list">
+                <!-- Sub-products dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="LastPart">
+        <div class="LinkDiv">
+            <p class="copyright">© 2026 Nestling · Note: Nestling is a fictional shop created by team JARDS for AI-GNITION hackathon 2026. <a href="https://github.com/Jefire916/JARDS_PS1_Nestling">Source code</a></p>
+        </div>
+    </div>
+
+    <script src="stores.js"></script>
+    <script src="assets/chat.js" defer></script>
+</body>
+</html>
