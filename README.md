@@ -29,7 +29,7 @@ The page **How it works** shows all 20 families, the 13 messages sent and the 7 
 | Folder | What's in it | Owner |
 |---|---|---|
 | `docs/` | The Nestling website (served by GitHub Pages) with the chat window | Jeiyanth |
-| `database/` | Product list imported into MantaGO (Database → Item Management) | Jeiyanth |
+| `database/` | Product list imported into MantaGO  | Jeiyanth |
 | `data/`, `engine/`, `output/` | Customer data, decision engine, message writer and guardrails | Devanshi |
 | `bot/` | Message packs | Adhvik |
 | `ai/` | AI set-up and knowledge base | Shivangi |
@@ -42,11 +42,9 @@ The page **How it works** shows all 20 families, the 13 messages sent and the 7 
 ## Team JARDS
 | Member | Role |
 |---|---|
-| Jeiyanth | Lead, website and chat window, product database, connecting the bot, GitHub |
+| Jeiyanth | chat window, product database, connecting the bot, GitHub |
 | Devanshi | Customer data and decision engine |
 | Adhvik | Message packs |
 | Shivangi | AI answers, knowledge base, human agent |
-| Reyansh | Testing, slides, results |
+| Reyansh | Testing, slides, results, website |
 
-## AI use declaration
-We used AI tools to help draft parts of the content and code. The team reviewed, built, configured and tested everything in MantaGO. In a live shop a language model would draft each reminder per family; the guardrail check shown here would run on every draft in exactly the same way.
