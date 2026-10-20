@@ -1,0 +1,21 @@
+customer_id,child_age_months,age_estimated,orders,days_since_last_order,consent,rules_matched,journey,offer,action,reason,demo_tester
+C01,10,N,4,11,Y,REFILL,REFILL,DP-3->DP-4,SEND RF-DP3-UP-DP4,Matched REFILL,Reyansh
+C02,2,N,2,8,Y,SIZE_UP,SIZE_UP,BN-3-6,SEND SU-0-3M-TO-3-6M,Matched SIZE_UP,Adhvik
+C03,12,N,3,110,Y,MILESTONE + WIN_BACK,MILESTONE,BN-12-18,SEND MS-12M,"Matched MILESTONE + WIN_BACK; priority picks MILESTONE, others wait for next cycle",Devanshi
+C04,14,N,2,111,Y,WIN_BACK,WIN_BACK,BN-12-18,SEND WB-12-18M,Matched WIN_BACK,Shivangi
+C05,9,N,4,9,N,REFILL,REFILL,DP-3,NO MESSAGE,No reminder consent,Jeiyanth
+C06,4,Y,3,10,Y,REFILL,REFILL,DP-2,SEND RF-DP2,Matched REFILL,
+C07,4,N,2,7,Y,-,-,,NO MESSAGE,No rule matches; FM-1 due but infant formula: no proactive message (SIFECS 6.1/6.3),
+C08,15,N,2,12,Y,REFILL,REFILL,GM-3,SEND RF-GM3,Matched REFILL,
+C09,8,N,2,12,Y,REFILL,REFILL,DP-3,NO MESSAGE,Cooldown: bot messaged on 2026-10-16,
+C10,1,N,1,12,Y,SIZE_UP,SIZE_UP,BN-0-3,SEND SU-NB-TO-0-3M,Matched SIZE_UP,
+C11,11,N,2,30,Y,REFILL,REFILL,WP-3PK,SEND RF-WP3PK,Matched REFILL,
+C12,7,N,2,5,Y,-,-,,NO MESSAGE,No rule matches,
+C13,23,N,1,597,Y,-,-,,NO MESSAGE,No rule matches,
+C14,18,N,2,132,Y,WIN_BACK,WIN_BACK,BN-12-18,SEND WB-12-18M,Matched WIN_BACK,
+C15,3,N,3,9,Y,REFILL + SIZE_UP,REFILL,DP-1->DP-2,SEND RF-DP1-UP-DP2,"Matched REFILL + SIZE_UP; priority picks REFILL, others wait for next cycle",
+C16,6,N,2,15,Y,MILESTONE,MILESTONE,BN-6-9,SEND MS-6M,Matched MILESTONE,
+C17,5,N,2,3,Y,-,-,,NO MESSAGE,No rule matches,
+C18,13,N,2,141,Y,WIN_BACK,WIN_BACK,BN-12-18,SEND WB-12-18M,Matched WIN_BACK,
+C19,9,N,3,11,Y,REFILL,REFILL,"DP-3, WP-80",SEND RF-DP3+WP80,Matched REFILL,
+C20,16,N,2,188,N,WIN_BACK,WIN_BACK,BN-12-18,NO MESSAGE,No reminder consent,

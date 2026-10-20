@@ -1,0 +1,27 @@
+item_id,name,category,size,min_age_m,max_age_m,pack_days,price_sgd,collection_piece,sifecs_scope,url
+BN-0-3,Stage Bundle 0-3M,bundle,0-3M,0,3,,49,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bundle-0-3m/
+BN-3-6,Stage Bundle 3-6M,bundle,3-6M,3,6,,52,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bundle-3-6m/
+BN-6-9,Stage Bundle 6-9M,bundle,6-9M,6,9,,58,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bundle-6-9m/
+BN-9-12,Stage Bundle 9-12M,bundle,9-12M,9,12,,58,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bundle-9-12m/
+BN-12-18,Stage Bundle 12-18M,bundle,12-18M,12,18,,62,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bundle-12-18m/
+CL-NB,Cotton Bodysuits NB (3 pack),clothing,NB,0,1,,18,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bodysuit-nb/
+CL-0-3,Cotton Bodysuits 0-3M (3 pack),clothing,0-3M,0,3,,18,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bodysuit-0-3m/
+CL-3-6,Cotton Bodysuits 3-6M (3 pack),clothing,3-6M,3,6,,19,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bodysuit-3-6m/
+CL-6-9,Cotton Bodysuits 6-9M (3 pack),clothing,6-9M,6,9,,20,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bodysuit-6-9m/
+CL-9-12,Cotton Bodysuits 9-12M (3 pack),clothing,9-12M,9,12,,20,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/bodysuit-9-12m/
+CL-12-18,Cotton Tee and Shorts Set 12-18M,clothing,12-18M,12,18,,22,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/tee-set-12-18m/
+DP-NB,Diapers Newborn (60),diapers,NB,0,1,7,14,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-nb/
+DP-1,Diapers Size 1 (70),diapers,S1,0,3,9,16,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-1/
+DP-2,Diapers Size 2 (70),diapers,S2,3,6,10,17,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-2/
+DP-3,Diapers Size 3 (66),diapers,S3,6,10,11,18,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-3/
+DP-4,Diapers Size 4 (60),diapers,S4,10,18,12,18,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-4/
+WP-80,Water Wipes (80),wipes,,0,36,10,4,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/wipes-80/
+WP-3PK,Water Wipes 3 Pack (240),wipes,,0,36,30,11,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/wipes-3pk/
+FM-1,Infant Formula Stage 1 0-6M 800g (fictional brand),formula_infant,Stage 1,0,6,7,45,,Y,https://jefire916.github.io/JARDS_PS1_Nestling/shop/formula-stage-1/
+FM-2,Follow-on Formula Stage 2 6-12M 800g (fictional brand),formula_infant,Stage 2,6,12,7,43,,Y,https://jefire916.github.io/JARDS_PS1_Nestling/shop/formula-stage-2/
+GM-3,Growing-up Milk Stage 3 1-3Y 800g (fictional brand),milk_growing_up,Stage 3,12,36,10,38,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/milk-stage-3/
+TY-S1,Sensory Set 1: Soft Rattle,toys,,3,36,,12,1,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/sensory-1-rattle/
+TY-S2,Sensory Set 2: Crinkle Book,toys,,4,36,,14,2,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/sensory-2-crinkle-book/
+TY-S3,Sensory Set 3: Stacking Cups,toys,,6,36,,10,3,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/sensory-3-stacking-cups/
+TY-S4,Sensory Set 4: Shape Sorter,toys,,12,36,,19,4,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/sensory-4-shape-sorter/
+TY-PM,Padded Play Mat,toys,,3,24,,39,,N,https://jefire916.github.io/JARDS_PS1_Nestling/shop/play-mat/
