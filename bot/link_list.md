@@ -1,9 +1,11 @@
-# Link list: new website links for every Open URL button
+# Tracked links on the bot's buttons
 
-Paste each link into the button's **Open URL** box, replacing the old `example.com` link.
-Do not retype it. Copy the whole line.
+Every product button in Nest Helper opens a page on the Nestling website. Each link is tagged with
+`utm_source=livechat`, the journey (`utm_medium`: refill, sizeup, winback or reorder), the campaign
+`nestling_ai` and the product (`utm_content`), so a shop with click analytics can see which reminder
+led to which visit. Our MantaGO plan does not include UTM Analysis, so we cannot read the clicks yet.
 
-| # | Pack | Button | New link |
+| # | Pack | Button | Link |
 |---|---|---|---|
 | 1 | RF-DP3-UP-DP4 | Reorder Size 4 | `https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-4/?utm_source=livechat&utm_medium=refill&utm_campaign=nestling_ai&utm_content=DP-4` |
 | 2 | RF-DP3-UP-DP4 | Stock up: 3 packs | `https://jefire916.github.io/JARDS_PS1_Nestling/shop/diapers-4/?utm_source=livechat&utm_medium=refill&utm_campaign=nestling_ai&utm_content=DP-4` |
@@ -21,4 +23,4 @@ Do not retype it. Copy the whole line.
 | 14 | MP-RE-MILK | Reorder (Formula Stage 2 card) | `https://jefire916.github.io/JARDS_PS1_Nestling/shop/formula-stage-2/?utm_source=livechat&utm_medium=reorder&utm_campaign=nestling_ai&utm_content=FM-2` |
 | 15 | MP-RE-MILK | Reorder (Milk Stage 3 card) | `https://jefire916.github.io/JARDS_PS1_Nestling/shop/milk-stage-3/?utm_source=livechat&utm_medium=reorder&utm_campaign=nestling_ai&utm_content=GM-3` |
 
-15 buttons in 6 packs. Nothing else in MantaGO uses a website link.
+15 buttons in 6 packs. Nothing else in the bot uses a website link.

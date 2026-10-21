@@ -18,7 +18,7 @@ What makes it different:
 The site is static (GitHub Pages, from `docs/`):
 - **Home:** the shop, an example reminder, and the offers.
 - **Store:** all products, a working cart (checkout is switched off because the shop is fictional), the 10% stock-up discount and free-delivery messages.
-- **Product pages:** 26 pages under `shop/`. The bot's reminder buttons open these pages with tracking tags (`?utm_source=livechat&utm_medium=refill|sizeup|winback|reorder&utm_campaign=nestling_ai`). Arriving from the bot shows a "You came from Nest Helper" banner.
+- **Product pages:** 26 pages under `docs/shop/`. The bot's reminder buttons open these pages with tracking tags (`?utm_source=livechat&utm_medium=refill|sizeup|winback|reorder&utm_campaign=nestling_ai`). Arriving from the bot shows a "You came from Nest Helper" banner.
 - **How it works** (`OurStory.html`): how a message is chosen, the table of all 20 families and what each got (or why not), what is real and what is simulated, and contact details.
 
 ### Our offers
@@ -52,10 +52,10 @@ python3 engine/decision_engine.py             # decisions and message packs for 
 python3 engine/segment_engine.py              # broadcast groups, MantaGO product import, report
 python3 engine/segment_engine.py 2026-10-27   # any other date
 python3 engine/compose_messages.py            # writes and guardrail-checks the messages
-python3 engine/build_site_v2.py docs          # rebuilds the product pages and "How it works"
+python3 engine/build_site.py docs             # rebuilds the product pages and "How it works"
 ```
-The two scripts give the same decision for every family; `decision_engine.py` checks this itself each time it runs.
-It also has an optional API (`pip install -r engine/requirements-api.txt`, then `python3 engine/decision_engine.py --api`) for a future live connection. On our MantaGO plan the bot cannot call it, so in the demo we run the engine by hand.
+`decision_engine.py` and `segment_engine.py` give the same decision for every family; `decision_engine.py` checks this itself each time it runs.
+It also has an optional API (`pip install -r engine/requirements.txt`, then `python3 engine/decision_engine.py --api`) for a future live connection. On our MantaGO plan the bot cannot call it, so in the demo we run the engine by hand.
 
 Results are written to `output/`:
 - `decision_engine_results.csv` — every family: decision, MantaGO pack, "Why this message?" pack and the reason.
@@ -84,8 +84,8 @@ This follows Singapore's Code of Ethics for the Sale of Infant Foods (SIFECS), 5
 - **Growing-up milk (1–3 years):** refill reminders go only to customers who agreed to reminders. No discounts.
 
 ## Testing
-`tests/Nestling_Test_Log_and_Results.xlsx` holds the test log and results: **35 tests, 34 pass, 0 fail, 1 not run** (UTM click analytics needs a MantaGO premium plan, which we do not have).
-One real failure was found and fixed: the AI repeated a customer's name and date from a customer-data file. We switched that file off, added a privacy rule, and retested. The "Failure Fix" sheet shows before and after.
+`tests/Nestling_Test_Log_and_Results.xlsx` holds the test log and results: **37 tests, 36 pass, 0 fail, 1 not run** (UTM click analytics needs a MantaGO premium plan, which we do not have).
+One real failure was found and fixed: asked for a customer's phone number, the AI read it out from a customer-data file in its knowledge base. We switched that file off, added a privacy rule and retested; it now refuses. The "Failure Fix" sheet shows the cause, the fix and the retest, and `tests/screenshots/` has the screenshot of the retest.
 
 ## What is real vs simulated
 - **Real:** the MantaGO bot (menu, message packs, reorder, STOP, human handover), the AI answers, the engine logic and its output, the website, the tracked links on the bot's buttons, and the tests.
@@ -104,13 +104,12 @@ One real failure was found and fixed: the AI repeated a customer's name and date
 | `data/` | Fictional customers, orders, products | Devanshi |
 | `engine/` | Decision engine (`decision_engine.py`), segment engine, message writer with guardrails, site builder | Devanshi (engine), Jeiyanth (site builder) |
 | `output/` | Engine results and the MantaGO product import | Devanshi |
-| `bot/` | Message packs, link list, AI set-up | Adhvik |
+| `bot/` | All 27 message packs as live in MantaGO, and the tracked links on their buttons | Adhvik |
 | `ai/` | AI knowledge file ("Nestling Shop Facts") and set-up notes | Shivangi |
-| `tests/` | Test log and results workbook | Jeiyanth, Reyansh |
-| `slides/` | Slides outline, demo script, screenshots | Reyansh |
+| `tests/` | Test log and results workbook, test screenshots | Jeiyanth, Reyansh |
 
-## AI use declaration
-Claude (Anthropic) helped draft the fictional data, the engine code, the website pages and the bot content. The team reviewed, built, configured and tested everything in MantaGO.
+## AI use
+We used an AI assistant to help draft parts of the code and text. The team designed, built, configured and tested everything.
 
 ## Team JARDS
 | Member | Role |
