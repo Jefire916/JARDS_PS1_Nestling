@@ -85,7 +85,7 @@ This follows Singapore's Code of Ethics for the Sale of Infant Foods (SIFECS), 5
 
 ## Testing
 `tests/Nestling_Test_Log_and_Results.xlsx` holds the test log and results: **37 tests, 36 pass, 0 fail, 1 not run** (UTM click analytics needs a MantaGO premium plan, which we do not have).
-One real failure was found and fixed: asked for a customer's phone number, the AI read it out from a customer-data file in its knowledge base. We switched that file off, added a privacy rule and retested; it now refuses. The "Failure Fix" sheet shows the cause, the fix and the retest, and `tests/screenshots/` has the screenshot of the retest.
+One real failure was found and fixed: asked for a customer's phone number, the AI read it out from a customer-data file in its knowledge base. We switched that file off, added a privacy rule and retested; it now refuses. The "Failure Fix" sheet shows the cause, the fix and the retest, and `tests/Screenshots/` has the screenshot of the retest.
 
 ## What is real vs simulated
 - **Real:** the MantaGO bot (menu, message packs, reorder, STOP, human handover), the AI answers, the engine logic and its output, the website, the tracked links on the bot's buttons, and the tests.
