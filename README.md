@@ -3,6 +3,7 @@
 > **Fictional shop. Simulated data.** Nestling is not a real business. Every customer, order and result here is invented for the competition.
 
 **Live site:** https://jefire916.github.io/JARDS_PS1_Nestling/
+
 **Bot:** "Nest Helper (JARDS)", MantaGO bot ID `olejqMRdj`, on the website's LiveChat bubble.
 
 ## What it is
@@ -43,14 +44,21 @@ No offer applies to infant formula, follow-on formula or growing-up milk.
    - `STOP` — stop reminders
 
 ## The decision engine
+`engine/decision_engine.py` (by Devanshi) follows our decision flowchart: STOP and consent first, then the infant-formula lock, snooze and the 7-day cooldown, then the four rules in priority order. It picks at most one message per family and the exact MantaGO message pack for it, with the matching "Why this message?" pack.
+
 Uses Python 3 only, no extra libraries.
 ```
-python3 engine/segment_engine.py              # decisions as of 2026-10-20
+python3 engine/decision_engine.py             # decisions and message packs for all 20 families
+python3 engine/segment_engine.py              # broadcast groups, MantaGO product import, report
 python3 engine/segment_engine.py 2026-10-27   # any other date
 python3 engine/compose_messages.py            # writes and guardrail-checks the messages
 python3 engine/build_site_v2.py docs          # rebuilds the product pages and "How it works"
 ```
+The two scripts give the same decision for every family; `decision_engine.py` checks this itself each time it runs.
+It also has an optional API (`pip install -r engine/requirements-api.txt`, then `python3 engine/decision_engine.py --api`) for a future live connection. On our MantaGO plan the bot cannot call it, so in the demo we run the engine by hand.
+
 Results are written to `output/`:
+- `decision_engine_results.csv` — every family: decision, MantaGO pack, "Why this message?" pack and the reason.
 - `decisions.csv` — every customer, the action and the reason.
 - `messages.csv` — the message chosen for each messaged customer.
 - `guardrail_tests.csv` — the guardrail checks (13 of 13 real messages pass; 7 of 7 deliberately bad messages are blocked).
@@ -68,7 +76,7 @@ Results are written to `output/`:
 
 - **Priority:** REFILL, then SIZE_UP, then MILESTONE, then WIN_BACK. One message per customer.
 - **Restraint:** messages go only to customers who agreed to reminders, at most one every 7 days.
-- **Result for the 20 fictional families:** 13 messaged (REFILL 6, SIZE_UP 2, MILESTONE 2, WIN_BACK 3), 7 held back (2 no consent, 4 no rule matched, 1 cooldown).
+- **Result for the 20 fictional families:** 13 messaged (REFILL 6, SIZE_UP 2, MILESTONE 2, WIN_BACK 3), 7 held back (2 no consent, 1 infant formula due, 1 cooldown, 3 with nothing due).
 
 ## Infant formula policy (SIFECS)
 This follows Singapore's Code of Ethics for the Sale of Infant Foods (SIFECS), 5th edition.
@@ -94,7 +102,7 @@ One real failure was found and fixed: the AI repeated a customer's name and date
 |---|---|---|
 | `docs/` | The Nestling website (GitHub Pages) | Jeiyanth, Reyansh (site design) |
 | `data/` | Fictional customers, orders, products | Devanshi |
-| `engine/` | Decision engine, message writer with guardrails, site builder | Devanshi (engine), Jeiyanth (site builder) |
+| `engine/` | Decision engine (`decision_engine.py`), segment engine, message writer with guardrails, site builder | Devanshi (engine), Jeiyanth (site builder) |
 | `output/` | Engine results and the MantaGO product import | Devanshi |
 | `bot/` | Message packs, link list, AI set-up | Adhvik |
 | `ai/` | AI knowledge file ("Nestling Shop Facts") and set-up notes | Shivangi |

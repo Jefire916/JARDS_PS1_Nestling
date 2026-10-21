@@ -1,0 +1,21 @@
+customer_id,baby_age_months,age_estimated,eligible_for_outbound,priority_rank,journey,journey_code,target_message_pack,pack_status,recommended_bundle_pack,explanation_pack,offer,rules_matched,decision_reason,demo_button
+C01,10,False,True,Priority 1: Refill,REFILL,RF-DP3-UP-DP4,RF-DP3-UP-DP4,built,-,WHY-RF,DP-3->DP-4,REFILL,"Running out soon, based on how often this family reorders: Diapers Size 3 (66) (or move up to Diapers Size 4 (60)).",Diapers running low
+C02,2,False,True,Priority 2: Size up,SIZE_UP,SU-0-3M-TO-3-6M,SU-0-3M-TO-3-6M,built,CARD-BN-3-6,WHY-SU,BN-3-6,SIZE_UP,"Baby is 2 months, near the top of the last clothing size. Suggests the Stage Bundle 3-6M.",Outgrowing clothes
+C03,12,False,True,Priority 3: Milestone,MILESTONE,MS-12M,MS-12M,built,CARD-BN-12-18,WHY-MS,BN-12-18,MILESTONE + WIN_BACK,"Baby turns 12 months. Free delivery for 7 days, plus the Stage Bundle 12-18M. Also matched WIN_BACK; only one message is sent, the rest wait.",First birthday
+C04,14,False,True,Priority 4: Win back,WIN_BACK,WB-12-18M,WB-12-18M,built,CARD-BN-12-18,WHY-WB,BN-12-18,WIN_BACK,"No order for 60+ days. Welcome back: free delivery within 14 days, plus the Stage Bundle 12-18M.",Been a while
+C05,9,False,False,Guardrail 1: No consent,-,-,NO-MSG-C05,built,-,-,-,REFILL,"This family didn't agree to reminders, so Nest Helper stays quiet. No consent, no message.",Didn't opt in
+C06,4,True,True,Priority 1: Refill,REFILL,RF-DP2,MP-RE-DIAPERS,closest built pack,-,WHY-RF,DP-2,REFILL,"Running out soon, based on how often this family reorders: Diapers Size 2 (70).",
+C07,4,False,False,Guardrail 2: Infant formula (SIFECS),-,-,NO-MSG-C07,built,-,-,-,-,"Infant formula is due, but Nest Helper never starts a message about infant formula (Singapore's SIFECS code). The parent can still type REORDER.",Formula is due
+C08,15,False,True,Priority 1: Refill,REFILL,RF-GM3,MP-RE-MILK,closest built pack,-,WHY-RF,GM-3,REFILL,"Running out soon, based on how often this family reorders: Growing-up Milk Stage 3 1-3Y 800g (fictional brand).",
+C09,8,False,False,Guardrail 4: 7-day cooldown,-,-,-,-,-,-,-,REFILL,Nest Helper already messaged on 2026-10-16. At most one message every 7 days.,
+C10,1,False,True,Priority 2: Size up,SIZE_UP,SU-NB-TO-0-3M,SU-NB-TO-0-3M,not built yet,-,WHY-SU,BN-0-3,SIZE_UP,"Baby is 1 month, near the top of the last clothing size. Suggests the Stage Bundle 0-3M.",
+C11,11,False,True,Priority 1: Refill,REFILL,RF-WP3PK,MP-RE-WIPES,closest built pack,-,WHY-RF,WP-3PK,REFILL,"Running out soon, based on how often this family reorders: Water Wipes 3 Pack (240).",
+C12,7,False,False,No rule matched,-,-,-,-,-,-,-,-,"Nothing is running out and no milestone is due, so no message.",
+C13,23,False,False,No rule matched,-,-,-,-,-,-,-,-,"Nothing is running out and no milestone is due, so no message.",
+C14,18,False,True,Priority 4: Win back,WIN_BACK,WB-12-18M,WB-12-18M,built,CARD-BN-12-18,WHY-WB,BN-12-18,WIN_BACK,"No order for 60+ days. Welcome back: free delivery within 14 days, plus the Stage Bundle 12-18M.",
+C15,3,False,True,Priority 1: Refill,REFILL,RF-DP1-UP-DP2,MP-RE-DIAPERS,closest built pack,-,WHY-RF,DP-1->DP-2,REFILL + SIZE_UP,"Running out soon, based on how often this family reorders: Diapers Size 1 (70) (or move up to Diapers Size 2 (70)). Also matched SIZE_UP; only one message is sent, the rest wait.",
+C16,6,False,True,Priority 3: Milestone,MILESTONE,MS-6M,MS-6M,not built yet,-,WHY-MS,BN-6-9,MILESTONE,"Baby turns 6 months. Free delivery for 7 days, plus the Stage Bundle 6-9M.",
+C17,5,False,False,No rule matched,-,-,-,-,-,-,-,-,"Nothing is running out and no milestone is due, so no message.",
+C18,13,False,True,Priority 4: Win back,WIN_BACK,WB-12-18M,WB-12-18M,built,CARD-BN-12-18,WHY-WB,BN-12-18,WIN_BACK,"No order for 60+ days. Welcome back: free delivery within 14 days, plus the Stage Bundle 12-18M.",
+C19,9,False,True,Priority 1: Refill,REFILL,RF-DP3+WP80,MP-RE-DIAPERS,closest built pack,-,WHY-RF,"DP-3, WP-80",REFILL,"Running out soon, based on how often this family reorders: Diapers Size 3 (66) and Water Wipes (80).",
+C20,16,False,False,Guardrail 1: No consent,-,-,NO-MSG-C05,built,-,-,-,WIN_BACK,"This family didn't agree to reminders, so Nest Helper stays quiet. No consent, no message.",
