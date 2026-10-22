@@ -25,7 +25,7 @@
     var why = { refill: 'a refill reminder', sizeup: 'a size-up reminder', milestone: 'a milestone message', winback: 'a welcome-back message', reorder: 'your reorder' };
     if (from && q.get('utm_source') === 'livechat') {
         var m = q.get('utm_medium');
-        from.textContent = 'You came from Nest Helper' + (m ? ' (' + (why[m] || m) + ')' : '') + '. Your cart is ready below.';
+        from.textContent = 'You came from Nest Helper' + (m ? ' (' + (why[m] || m) + ')' : '') + '. Add it to your cart below.';
         from.hidden = false;
     }
 })();

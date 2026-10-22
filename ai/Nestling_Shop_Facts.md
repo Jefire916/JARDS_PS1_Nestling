@@ -40,6 +40,7 @@ Nestling is a fictional online baby shop in Singapore. It sells clothing, diaper
 - Free delivery on every Stage Bundle and on orders over S$60.
 - Welcome back: customers who have not ordered for 60 days or more get free delivery on their next order within 14 days.
 - Free size exchange on clothing and bundles within 30 days (unworn, with tags). Delivery is free both ways.
+- Milestones: when a baby turns 6 months, and in the first-birthday month, free delivery on the next order within 7 days.
 - Offers never apply to infant formula, follow-on formula or growing-up milk.
 
 ## Things Nestling does NOT sell

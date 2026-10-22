@@ -227,7 +227,7 @@ PRODUCT_JS = r"""(function () {
     var why = { refill: 'a refill reminder', sizeup: 'a size-up reminder', milestone: 'a milestone message', winback: 'a welcome-back message', reorder: 'your reorder' };
     if (from && q.get('utm_source') === 'livechat') {
         var m = q.get('utm_medium');
-        from.textContent = 'You came from Nest Helper' + (m ? ' (' + (why[m] || m) + ')' : '') + '. Your cart is ready below.';
+        from.textContent = 'You came from Nest Helper' + (m ? ' (' + (why[m] || m) + ')' : '') + '. Add it to your cart below.';
         from.hidden = false;
     }
 })();
@@ -267,7 +267,7 @@ def our_story():
             <div class="step"><b>2</b><h3>Apply the rules</h3><p>At most one message: refill first, then size-up, milestone, welcome-back. Only with consent, max one every 7 days.</p></div>
             <div class="step"><b>3</b><h3>Write the message</h3><p>A short message for that baby's stage, with the right product and a "Why this message?" button.</p></div>
             <div class="step"><b>4</b><h3>Check the guardrails</h3><p>Blocked if it promotes formula, pressures, gives health advice, uses personal data or hides that it's an AI.</p></div>
-            <div class="step"><b>5</b><h3>Hand over to a person</h3><p>Type HUMAN, or ask about a complaint, refund or safety, and a Nestling team member joins the same chat.</p></div>
+            <div class="step"><b>5</b><h3>Hand over to a person</h3><p>Type HUMAN and a Nestling team member joins the same chat. For complaints, refunds or safety questions, the AI tells you to type HUMAN.</p></div>
         </div>
 
         <div class="title-container"><h2 class="site-name">Today's decisions for {len(dec)} families</h2></div>
