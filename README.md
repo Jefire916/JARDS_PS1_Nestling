@@ -8,8 +8,8 @@ Nest Helper is a MantaGO chatbot for Nestling, a fictional Singapore baby shop. 
 |---|---|
 | **Try it** | https://jefire916.github.io/JARDS_PS1_Nestling/ (tap the chat bubble, **Start Chat**, **Yes**, then type `DEMO`) |
 | **Bot** | "Nest Helper (JARDS)", MantaGO bot ID `olejqMRdj` |
-| **Pitch deck** | [`submission/Nest_Helper_Pitch_Deck.pdf`](submission/Nest_Helper_Pitch_Deck.pdf) |
-| **One-page brief** | [`submission/Nest_Helper_One_Page_Brief.pdf`](submission/Nest_Helper_One_Page_Brief.pdf) |
+| **Pitch deck** | [`submission/Nest_Helper_Pitch_Deck_3.pdf`](submission/Nest_Helper_Pitch_Deck_3.pdf) |
+| **One-page brief** | [`submission/Nest_Helper_One_Page_Brief_2.pdf`](submission/Nest_Helper_One_Page_Brief_2.pdf) |
 | **Test log** | [`tests/Nestling_Test_Log_and_Results.xlsx`](tests/Nestling_Test_Log_and_Results.xlsx) |
 
 ## Check our work in 5 minutes
